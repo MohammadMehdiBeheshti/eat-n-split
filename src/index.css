@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	/* Colors */
+	--black: #121212;
+	--white: #ffffff;
+	--gray: #393e46;
+	--red: #ff2e63;
+	--yellow: #ffd369;
+	--green: #a4be7b;
+
+	/* Fonts */
+	--fontBold: "poppins-b";
+	--fontSB: "poppins-sb";
+	--fontMedium: "poppins-m";
+}
+
+@font-face {
+	font-family: "poppins-m";
+	src: url("./fonts/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "poppins-sb";
+	src: url("./fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "poppins-b";
+	src: url("./fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	user-select: none;
+}
+
+body {
+	font-size: 1.6rem;
+	background-color: var(--black);
+	color: var(--white);
+	min-height: 100dvh;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
